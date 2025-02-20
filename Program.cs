@@ -6,7 +6,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 
 var endpoint = "https://models.inference.ai.azure.com";
-var token = "...";
+var token = "..."; //Renseigner ici son token depuis https://github.com/settings/tokens/new
+//Liste des modèles : https://ai.azure.com/explore/models
 //var model = "DeepSeek-R1";
 //var model = "Ministral-3B";
 var model = "Mistral-Large-2411";
