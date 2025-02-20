@@ -1,1 +1,13 @@
-
+Ministral-3B
+<JSON>
+{
+    "NumeroDossiers": [],
+    "Titre": "Reclamation de candidature pour le poste de Senior software developer",
+    "Contenu": "Bonjour, \n\nJe souhaite postuler à l'offre de poste de 'Senior software developer'. \n\nJe suis disponible et très motivé. \n\nÀ quelle adresse puis-je envoyer ma CV ? \n\nCordialement, \nJohn SMith \n\nEmail: jsmith@gmail.com \n\nTéléphone: +44 (0) 123 456 789 \n\nAdresse: 1 East Street SE125EM London (UK)",
+    "TypeService": 4,
+    "CategorieProbleme": 4,
+    "Priorisation": 0,
+    "InformationsNominatives": ["John SMith"],
+    "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
+}
+</JSON>
