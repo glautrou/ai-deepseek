@@ -1,11 +1,55 @@
 Ministral-3B
-
+<JSON>
+{
+    "NumeroDossiers": [],
+    "Titre": "Gros bisous les amis",
+    "Contenu": "Gros bisous les amis",
+    "TypeService": 7,
+    "CategorieProbleme": 5,
+    "Priorisation": 1,
+    "InformationsNominatives": [],
+    "CoordonneesContact": []
+}
+</JSON>
 
 Mistral-Large-2411
-
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "Message sans contenu pertinent",
+  "Contenu": "Gros bisous les amis",
+  "TypeService": 7,
+  "CategorieProbleme": 5,
+  "Priorisation": 1,
+  "InformationsNominatives": [],
+  "CoordonneesContact": []
+}
+</JSON>
 
 Meta-Llama-3.1-405B-Instruct
-
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "Message de réclamation sans contenu précis",
+  "Contenu": "Gros bisous les amis",
+  "TypeService": 7,
+  "CategorieProbleme": 5,
+  "Priorisation": 2,
+  "InformationsNominatives": [],
+  "CoordonneesContact": []
+}
+</JSON>
 
 Phi-3-medium-128k-instruct
-
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "",
+  "Contenu": "Gros bisous les amis",
+  "TypeService": 7,
+  "CategorieProbleme": 5,
+  "Priorisation": 2,
+  "InformationsNominatives": [],
+  "CoordonneesContact": []
+}
+</JSON>
