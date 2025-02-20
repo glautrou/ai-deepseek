@@ -1,11 +1,65 @@
 Ministral-3B
-
+<JSON>
+{
+    "NumeroDossiers": [],
+    "Titre": "Demande réclamation pour l'ouverture d'un nouveau dossier pour un candidat",
+    "Contenu": "L'utilisateur John SMith souhaite postuler à l'offre d'emploi de 'Senior software developer' et souhaite savoir à quel endroit envoyer sa candidature. Il est disponible et très motivé.",
+    "TypeService": 3,
+    "CategorieProbleme": 1,
+    "Priorisation": 2,
+    "InformationsNominatives": ["John SMith"],
+    "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
+}
+</JSON>
 
 Mistral-Large-2411
-
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "Candidature pour le poste de 'Senior Software Developer'",
+  "Contenu": "Hello,\n\nI would like to apply to the job offer 'Senior software developer'.\nI am available and highly motivated, at which address can I send you my resume?\n\nKind regards,\nJohn SMith\n\njsmith@gmail.com\n+44 (0) 123 456 789\n1 East Street SE125EM London (UK)",
+  "TypeService": 3,
+  "CategorieProbleme": 5,
+  "Priorisation": 2,
+  "InformationsNominatives": ["John SMith"],
+  "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
+}
+</JSON>
 
 Meta-Llama-3.1-405B-Instruct
-
+Après analyse de la réclamation reçue, voici les résultats de mon analyse au format JSON :
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "Candidature pour l'offre d'emploi 'Senior software developer'",
+  "Contenu": "Bonjour,\nJe souhaite postuler à l'offre d'emploi 'Senior software developer'.\nJe suis disponible et très motivé, à quelle adresse puis-je envoyer mon CV ?\nCordialement,\nJohn Smith",
+  "TypeService": 3,
+  "CategorieProbleme": 5,
+  "Priorisation": 2,
+  "InformationsNominatives": ["John Smith"],
+  "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
+}
+</JSON>
+Explications :
+* Aucun numéro de dossier n'a été détecté.
+* Le titre de la réclamation est une synthèse de l'objet de la demande.
+* Le contenu de la réclamation est le message envoyé par l'utilisateur, converti au format Markdown.
+* Le service interne le plus apte à traiter la demande est les Ressources Humaines (TypeService = 3).
+* La catégorisation la plus appropriée à la demande est Autre (CategorieProbleme = 5), car il s'agit d'une candidature pour un emploi.
+* La priorisation est moyenne (Priorisation = 2), car il s'agit d'une demande courante.
+* Les informations nominatives sont le nom et prénom de la personne qui postule (John Smith).
+* Les coordonnées de contact sont l'adresse email, le numéro de téléphone et l'adresse postale de la personne qui postule.
 
 Phi-3-medium-128k-instruct
-
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "Demande d'emploi Senior software developer",
+  "Contenu": "Je souhaite m'inscrire à l'offre d'emploi 'Senior software developer'. Je suis disponible et très motivé. Où puis-je vous envoyer ma CV?",
+  "TypeService": 7,
+  "CategorieProbleme": 5,
+  "Priorisation": 1,
+  "InformationsNominatives": ["John Smith"],
+  "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
+}
+</JSON>
