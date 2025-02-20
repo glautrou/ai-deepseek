@@ -1,29 +1,11 @@
 Ministral-3B
-Pour interpréter la demande du client et générer un JSON en respectant la structure C#, nous devons analyser le message pour déterminer les informations pertinentes telles que le type de service, la catégorie de problème, et la priorisation de la réclamation.
 
-Voici la réponse au format JSON :
 
-```json
-{
-    "NumeroDossiers": [],
-    "Titre": "Dossier de réclamation",
-    "Contenu": "Ca commence à bien faire, quand mon dossier sera traité ?!?",
-    "TypeService": 4,
-    "CategorieProbleme": 3,
-    "Priorisation": 1,
-    "InformationsNominatives": ["Nom du client"],
-    "CoordonneesContact": ["Email du client", "Numéro de téléphone du client"]
-}
-```
+Mistral-Large-2411
 
-### Explications :
-1. **NumeroDossiers** : Le message ne mentionne pas de numéro de dossier spécifique.
-2. **Titre** : "Dossier de réclamation" est un titre synthétisé.
-3. **Contenu** : Le contenu du message est exact.
-4. **TypeService** : "Communication" (4) car le problème semble être lié à une attente de traitement de dossier.
-5. **CategorieProbleme** : "Le montant reçu est incorrect" (3) car le client exprime une impatience concernant le traitement de son dossier.
-6. **Priorisation** : "Faible" (1) car le message n'est pas urgent et ne contient pas d'indications de date ou d'agressivité.
-7. **InformationsNominatives** : Le nom du client est ajouté pour la structure requise.
-8. **CoordonneesContact** : Les coordonnées de contact du client sont ajoutées pour la structure requise.
 
-Assurez-vous de remplacer "Nom du client", "Email du client", et "Numéro de téléphone du client" par les informations réelles du client toute fois que disponibles.
+Meta-Llama-3.1-405B-Instruct
+
+
+Phi-3-medium-128k-instruct
+
