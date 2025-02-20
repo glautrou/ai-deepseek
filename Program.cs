@@ -7,7 +7,11 @@ using System.Text.RegularExpressions;
 
 var endpoint = "https://models.inference.ai.azure.com";
 var token = "...";
-var model = "DeepSeek-R1";
+//var model = "DeepSeek-R1";
+//var model = "Ministral-3B";
+var model = "Mistral-Large-2411";
+//var model = "Meta-Llama-3.1-405B-Instruct";
+//var model = "Phi-3-medium-128k-instruct";
 
 IChatClient chatClient = new ChatCompletionsClient(new Uri(endpoint), new AzureKeyCredential(token))
     .AsChatClient(model);
@@ -20,7 +24,6 @@ Je n'ai pas réussi à vous joindre, merci de revenir vers moi au 0601020304 ou 
 Cordialement,
 Pierre Martin";
 var reclamation1 = await runner.DeterminerReclamationAsync(input1);
-
 
 Console.WriteLine("\n\n################## Cas 2 : Personne impatiente ##################");
 var input2 = @"Ca commence à bien faire, quand mon dossier sera traité ?!?";
@@ -43,7 +46,6 @@ jsmith@gmail.com
 +44 (0) 123 456 789
 1 East Street SE125EM London (UK)";
 var reclamation4 = await runner.DeterminerReclamationAsync(input4);
-
 
 Console.WriteLine("\n\n################## Cas 5 : Demande incompréhensible ##################");
 var input5 = @"Gros bisous les amis";
