@@ -11,7 +11,8 @@ public class AiRunner
     private readonly string PromptReclamation = @"Tu es un assistant et vas devoir aider à interpréter une demande d'un client d'une compagnie d'assurance.
 Tu renverras les résultats de ton analyse au format JSON en respectant la structure C# ci-dessous, dont tu y trouveras dans le code la description des règles 
 pour chaque champ afin de t'aider à produire le meilleur résultat.
-Tu dois insérer les balises <JSON> et </JSON> pour délimiter le JSON à renvoyer.";
+Tu dois insérer les balises <JSON> et </JSON> pour délimiter le JSON à renvoyer.
+Pour les propriétés enums (TypeService, CategorieProbleme et Priorisation) tu dois absolument renvoyer leur valeur entière.";
 
     private string ContenuFichiersTechniques { get; set; }
 
@@ -24,9 +25,9 @@ Tu dois insérer les balises <JSON> et </JSON> pour délimiter le JSON à renvoy
     {
         var prompt = await GetReclamationPromptAsync(question);
         var response = await _chatClient.CompleteAsync(prompt);
-        Console.WriteLine("\n> REPONSE :\n");
+        Console.WriteLine($"\n> REPONSE :\n" + response);
         var json = ExtractJsonContent(response.ToString());
-        Console.WriteLine("\n> JSON :\n");
+        Console.WriteLine($"\n> JSON :\n" + json);
 
         return !string.IsNullOrEmpty(json)
             ? JsonSerializer.Deserialize<Reclamation>(json)
