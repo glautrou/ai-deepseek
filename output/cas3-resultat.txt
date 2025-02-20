@@ -1,15 +1,11 @@
 Ministral-3B
-```json
-<JSON>
-{
-    "NumeroDossiers": ["F12345"],
-    "Titre": "Statut du dossier de sinistre",
-    "Contenu": "Bonjour, \n\nJ'aimerais savoir où en est mon dossier de sinistre F12345. \n\nBien à vous, \n\nJacques",
-    "TypeService": 0,
-    "CategorieProbleme": 0,
-    "Priorisation": 1,
-    "InformationsNominatives": ["Jacques"],
-    "CoordonneesContact": ["jacques@example.com"]
-}
-</JSON>
-```
+
+
+Mistral-Large-2411
+
+
+Meta-Llama-3.1-405B-Instruct
+
+
+Phi-3-medium-128k-instruct
+
