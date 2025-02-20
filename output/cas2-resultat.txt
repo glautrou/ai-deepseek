@@ -1,11 +1,55 @@
 Ministral-3B
-
+<JSON>
+{
+    "NumeroDossiers": ["Y12345"],
+    "Titre": "Dossier de traitement",
+    "Contenu": "Ca commence à bien faire, quand mon dossier sera traité ?!?",
+    "TypeService": 0,
+    "CategorieProbleme": 1,
+    "Priorisation": 2,
+    "InformationsNominatives": ["Nom du client"],
+    "CoordonneesContact": ["email@example.com"]
+}
+</JSON>
 
 Mistral-Large-2411
-
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "Réclamation concernant le traitement d'un dossier",
+  "Contenu": "Ca commence à bien faire, quand mon dossier sera traité ?!?",
+  "TypeService": 5,
+  "CategorieProbleme": 1,
+  "Priorisation": 3,
+  "InformationsNominatives": [],
+  "CoordonneesContact": []
+}
+</JSON>
 
 Meta-Llama-3.1-405B-Instruct
-
+<JSON>
+{
+  "NumeroDossiers": [],
+  "Titre": "Demande de traitement de dossier",
+  "Contenu": "Ca commence à bien faire, quand mon dossier sera traité ?!?",
+  "TypeService": 5,
+  "CategorieProbleme": 2,
+  "Priorisation": 2,
+  "InformationsNominatives": [],
+  "CoordonneesContact": []
+}
+</JSON>
 
 Phi-3-medium-128k-instruct
-
+<JSON>
+{
+   "NumeroDossiers":[],
+   "Titre":"Quand sera traité mon dossier ?",
+   "Contenu":"Ca commence à bien faire, quand mon dossier sera traité ?!?",
+   "TypeService":2,
+   "CategorieProbleme":1,
+   "Priorisation":2,
+   "InformationsNominatives":[],
+   "CoordonneesContact":[]
+}
+</JSON>
