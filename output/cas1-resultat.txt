@@ -1,1 +1,13 @@
-
+Ministral-3B
+```json
+{
+    "NumeroDossiers": [],
+    "Titre": "Non réception du virement",
+    "Contenu": "# Non réception du virement\nSuite à mon dernier échange téléphonique de la semaine dernière avec Mr Martin, je n'ai toujours pas reçu votre virement qui était censé être versé sous 48h.\nJe n'ai pas réussi à vous joindre, merci de revenir vers moi au 0601020304 ou p.martin@gmail.com.",
+    "TypeService": 2,
+    "CategorieProbleme": 2,
+    "Priorisation": 1,
+    "InformationsNominatives": ["Pierre Martin"],
+    "CoordonneesContact": ["0601020304", "p.martin@gmail.com"]
+}
+```
