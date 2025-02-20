@@ -1,11 +1,55 @@
 Ministral-3B
-
+<JSON>
+{
+  "NumeroDossiers": ["F12345"],
+  "Titre": "Statut de mon dossier de sinistre",
+  "Contenu": "Bonjour, j'aimerais savoir où en est mon dossier de sinistre F12345. Bien à vous, Jacques",
+  "TypeService": 5,
+  "CategorieProbleme": 1,
+  "Priorisation": 1,
+  "InformationsNominatives": ["Jacques"],
+  "CoordonneesContact": ["Jacques"]
+}
+</JSON>
 
 Mistral-Large-2411
-
+<JSON>
+{
+  "NumeroDossiers": ["F12345"],
+  "Titre": "Demande de suivi du dossier de sinistre F12345",
+  "Contenu": "Bonjour,\n\nJ'aimerais savoir où en est mon dossier de sinistre F12345.\n\nBien à vous,\nJacques",
+  "TypeService": 5,
+  "CategorieProbleme": 1,
+  "Priorisation": 2,
+  "InformationsNominatives": ["Jacques"],
+  "CoordonneesContact": []
+}
+</JSON>
 
 Meta-Llama-3.1-405B-Instruct
-
+<JSON>
+{
+  "NumeroDossiers": ["F12345"],
+  "Titre": "Suivi dossier de sinistre F12345",
+  "Contenu": "Bonjour,\nJ'aimerais savoir où en est mon dossier de sinistre F12345.\nBien à vous,\nJacques",
+  "TypeService": 5,
+  "CategorieProbleme": 2,
+  "Priorisation": 2,
+  "InformationsNominatives": ["Jacques"],
+  "CoordonneesContact": []
+}
+</JSON>
 
 Phi-3-medium-128k-instruct
-
+<JSON>
+{
+  "NumeroDossiers": ["F12345"],
+  "Titre": "Demande de connaissance de l'état du dossier de sinistre",
+  "Contenu": "Bonjour,\nJ'aimerais savoir où en est mon dossier de sinistre F12345.\nBien à vous,\nJacques",
+  "TypeService": 1,
+  "CategorieProbleme": 1,
+  "Priorisation": 1,
+  "InformationsNominatives": ["Jacques"],
+  "CoordonneesContact": []
+}
+</JSON>
