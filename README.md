@@ -48,16 +48,16 @@ A la suite de ces consignes sera automatiquement ajouté le contenu des fichiers
 
 # Obtention d'une clé
 
-Notre application C# utilisera Azure AI Foundry, dont le SDK nous permettra d'utiliser et d'abstraire différents modèles populaires comme Mistral, Llama ou encore DeepSeek. Les démos utiliseront :
+Notre application C# utilisera la bibliothèque Microsoft.Extensions.AI (MEAI), qui nous permettra d'utiliser et d'abstraire différents services et modèles populaires comme Mistral, Llama ou encore DeepSeek. Les démos utiliseront :
 
 - Ministral-3B
 - Mistral-Large-2411
 - Meta-Llama-3.1-405B-Instruct
 - Phi-3-medium-128k-instruct
 
-Pour éviter d'exécuter l'IA localement sur sa machine et essayer gratuitement, il faut aller générer un jeton d'accès personnel sur GitHub. Vous devrez y sélectionner une durée de validité, les information de nommage et du scope d'accès étant facultatives pour notre utilisation.
+Pour éviter d'exécuter l'IA localement sur sa machine et l'essayer gratuitement, nous allons utiliser GitHub Models. Connectez-vous à votre compte GitHub puis générez un jeton d'accès personnel. Vous devrez y sélectionner une durée de validité, les information de nommage et du scope d'accès étant facultatives pour notre utilisation.
 
-Le catalogue des différents modèles est accessible sur Azure AI Foundry qui permet aussi de rechercher que de comparer, aussi bien niveau performance que tarification.
+Si vous le préférez, vous pouvez également déployer vos propres modèles sur Azure AI Foundry, qui permet par ailleurs de rechercher et de comparer un très grand nombre de modèles, aussi bien niveau performance que tarification.
 
 # Code C#
 
