@@ -2,12 +2,17 @@ L'article associé à ce repository est trouvable sur le blog Webnet : Intégrer
 
 **RETRANSCRIPTION :**
 
+##### Table of Contents  
+[Cas d'usage](#cas-usage)  
+[Aspects techniques](#aspects-techniques)
+
 L'Intelligence Artificielle est de plus en plus présente dans notre quotidien, que ce soit pour accompagner un développeur, améliorer la qualité des photos ou même pour laver plus efficacement le linge. Tout le monde connait l'IA, qui vit actuellement un vrai "boom" depuis quelques années, et dont les états et entreprises technologiques investissement par dizaine voir centaine de milliards.
 
 Elle devient aujourd'hui incontournable pour aussi bien améliorer la productivité que la qualité, mais aussi en tant que vrai argument commercial. En tant que développeur .NET nous avons la chance que GitHub Copilot soit utilisable gratuitement au sein de Visual Studio et que Microsoft y propose déjà tout un écosystème.
 
 Mais au juste, est-ce compliqué de fournir des services basés sur l'IA ?
 
+<a name="cas-usage"/></a>
 # Cas d'usage
 
 Nous travaillons pour une compagnie d'assurance et nous souhaitons mettre en place un simple formulaire qui permette aux utilisateurs d'envoyer tout type de demande, comme des réclamations.
@@ -16,6 +21,7 @@ Le formulaire doit être simple et ne contenir qu'un unique champ de contenu qui
 
 Une fois envoyée, la demande doit ensuite pouvoir être traité "intelligemment", c'est-à-dire qu'en fonction de son contenu il devra être automatiquement assigné aux bons interlocuteurs et priorisé. Cette simplicité pour l'utilisateur (simple saisie) ne doit donc pas être un frein pour son intégration au sein des process de la compagnie d'assurance.
 
+<a name="aspects-techniques"/></a>
 # Aspects techniques
 
 Dans le cadre de cet article, le "moteur IA" sera développé en C# et exécuté au sein d'une application console.
