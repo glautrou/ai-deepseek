@@ -2,9 +2,27 @@ L'article associé à ce repository est trouvable sur le blog Webnet : Intégrer
 
 **RETRANSCRIPTION :**
 
-##### Table of Contents  
-[Cas d'usage](#cas-usage)  
-[Aspects techniques](#aspects-techniques)
+##### Table of Contents
+
+- [Cas d'usage](#cas-usage)  
+- [Aspects techniques](#aspects-techniques)
+- [Principe de fonctionnement](#principes)
+- [Rédaction du prompt](#prompt)
+- [Obtention d'une clé](#cle)
+- [Code C#](#code)
+  - [Dépendances](#dependances)
+  - [AI runner](#runner)
+  - [Programme](#programme)
+- [Démo et résultats](#demo)
+  - [Cas 1 : Virement non-reçu](#cas1)
+  - [Cas 2 : Personne impatiente](#cas2)
+  - [Cas 3 : Suivi de dossier](#cas3)
+  - [Cas 4 : Candidature spontanée (langue anglaise)](#cas4)
+  - [Cas 5 : Demande incompréhensible](#cas5)
+- [Conclusion](#conclusion)
+- [Aller plus loin](#aller-plus-loin)
+  - [Streamer le retour de l'IA](#stream)
+  - [Comprendre la réponse et les choix effectués](#comprendre)
 
 L'Intelligence Artificielle est de plus en plus présente dans notre quotidien, que ce soit pour accompagner un développeur, améliorer la qualité des photos ou même pour laver plus efficacement le linge. Tout le monde connait l'IA, qui vit actuellement un vrai "boom" depuis quelques années, et dont les états et entreprises technologiques investissement par dizaine voir centaine de milliards.
 
@@ -28,6 +46,7 @@ Dans le cadre de cet article, le "moteur IA" sera développé en C# et exécuté
 
 L'entreprise souhaite avoir la possibilité de changer de modèle IA au besoin, et sans nécessité de modifier l'application. Elle pourra ainsi à sa guise changer de partenaire, par exemple sur des aspects financiers ou sécuritaires, voir intégrer un système de fallback pour pallier à l'indisponibilité éventuelle d'un service. Il est donc plus pertinent de privilégier ici un SDK générique plutôt que d'appeler directement les API de chaque service.
 
+<a name="principes"/></a>
 # Principe de fonctionnement
 
 Lorsque l'utilisateur transmettra sa demande, l'IA analysera automatiquement le contenu pour :
@@ -41,6 +60,7 @@ Lorsque l'utilisateur transmettra sa demande, l'IA analysera automatiquement le 
 
 La réponse de l'IA devra respecter un format de retour bien précis afin de correctement exploiter le résultat produit, mais aussi pour qu'il soit toujours identique quel que soit le modèle utilisé.
 
+<a name="prompt"/></a>
 # Rédaction du prompt
 
 Voici le prompt générique envoyé à l'IA afin de le guider sur son rôle précis et le résultat attendu qui sera au format JSON :
@@ -52,6 +72,7 @@ Voici le prompt générique envoyé à l'IA afin de le guider sur son rôle pré
 
 A la suite de ces consignes sera automatiquement ajouté le contenu des fichiers techniques. On guide donc l'IA sur le contexte, ce qu'il doit faire, et le résultat attendu.
 
+<a name="cle"/></a>
 # Obtention d'une clé
 
 Notre application C# utilisera la bibliothèque Microsoft.Extensions.AI (MEAI), qui nous permettra d'utiliser et d'abstraire différents services et modèles populaires comme Mistral, Llama ou encore DeepSeek. Les démos utiliseront :
@@ -65,16 +86,19 @@ Pour éviter d'exécuter l'IA localement sur sa machine et l'essayer gratuitemen
 
 Si vous le préférez, vous pouvez également déployer vos propres modèles sur Azure AI Foundry, qui permet par ailleurs de rechercher et de comparer un très grand nombre de modèles, aussi bien niveau performance que tarification.
 
+<a name="code"/></a>
 # Code C#
 
 Créer une simple application console C#.
 
+<a name="dependances"/></a>
 ## Dépendances
 
 Ajouter la librairie NuGet Microsoft.Extensions.AI.AzureAIInference :
 
 `dotnet add package Microsoft.Extensions.AI.AzureAIInference`
 
+<a name="runner"/></a>
 ## AI runner
 
 Il permet la séparation de la logique utilisant l'IA en l'intégrant au sein d'un service dédié et facilement injectable.
@@ -83,16 +107,19 @@ Se référer au code source...
 
 Ici le code va extraire le JSON et le désérialiser en C# afin de pouvoir l'exploiter.
 
+<a name="programme"/></a>
 ## Programme
 
 Application console utilisant l'AI runner pour traiter plusieurs requêtes :
 
 Se référer au code source...
 
+<a name="demo"/></a>
 # Démo et résultats
 
 Voici les résultats des 4 inputs traités par DeepSeek :
 
+<a name="cas1"/></a>
 ## Cas 1 : Virement non-reçu
 
 > Bonjour,
@@ -111,6 +138,7 @@ Les 4 savent parfaitement extraire les informations, en revanche ils ne sont pas
 - définir un titre
 - le contenu est parfois tronqué (il faudrait surement affiner le prompt)
 
+<a name="cas2"/></a>
 ## Cas 2 : Personne impatiente
 
 > Ca commence à bien faire, quand mon dossier sera traité ?!?
@@ -121,6 +149,7 @@ Voir code source dans répertoire /output...
 
 Etrangement Ministral-3B invente ici des données d'extraites.
 
+<a name="cas3"/></a>
 ## Cas 3 : Suivi de dossier
 
 > Bonjour,
@@ -134,6 +163,7 @@ Voir code source dans répertoire /output...
 
 Ministral-3B utilise le prénom de la personne comme une information de contact.
 
+<a name="cas4"/></a>
 ## Cas 4 : Candidature spontanée (langue anglaise)
 
 > Hello,
@@ -151,6 +181,7 @@ Voir code source dans répertoire /output...
 
 La plupart des résultats sont cohérents malgré la demande formulée en langue anglaise, bien que certains traduisent le contenu original en Français. Un affinage du prompt devrait permettre de gérer ce cas.
 
+<a name="cas5"/></a>
 ## Cas 5 : Demande incompréhensible
 
 > Gros bisous les amis
@@ -161,6 +192,7 @@ Voir code source dans répertoire /output...
 
 Les résultats sont un peu près identiques, bien que certains n'arrivent pas à définir un titre. Encore une fois, le lui imposer dans le prompt devrait suffire.
 
+<a name="conclusion"/></a>
 # Conclusion
 
 Utiliser de l'IA peut donc se faire très simplement en quelques lignes de code, sans pour autant avoir à investir sans un modèle spécifique et y resté enfermé.
@@ -169,8 +201,10 @@ Tous les modèles n'ont pas la même expertise (génération de texte, d'image..
 
 Le prompt utilisé ici est assez simple et facilement compréhensible pour l'IA, bien que le cas d'usage soit trop générique. Ils ont tous excellé dans l'extraction d'information pertinentes ce qui les rendent précieux pour détecter des informations associables par exemple en base de données (numéro de dossier, nom de la personne, emails...).
 
+<a name="aller-plus-loin"/></a>
 # Aller plus loin
 
+<a name="stream"/></a>
 ## Streamer le retour de l'IA
 
 Dans cet article nous avons attendu la réponse complète de l'IA avant de la traiter. Il est également possible de streamer sa réponse au fur et à mesure de sa réflexion, et donc d'avoir un début de retour au plus vite :
@@ -194,6 +228,7 @@ if (match.Success)
 }
 ```
 
+<a name="comprendre"/></a>
 ## Comprendre la réponse et les choix effectués
 
 Les réponses du modèle DeepSeek-R1 intègrent également son raisonnement complet afin de comprendre son raisonnement voir ses suppositions. Il est disponible au sein des balises <think></think>.
