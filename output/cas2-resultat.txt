@@ -4,9 +4,9 @@ Ministral-3B
     "NumeroDossiers": ["Y12345"],
     "Titre": "Dossier de traitement",
     "Contenu": "Ca commence à bien faire, quand mon dossier sera traité ?!?",
-    "TypeService": 0,
-    "CategorieProbleme": 1,
-    "Priorisation": 2,
+    "TypeService": 0, //?
+    "CategorieProbleme": 1, //OuvertureNouveauDossier
+    "Priorisation": 2, //Moyenne
     "InformationsNominatives": ["Nom du client"],
     "CoordonneesContact": ["email@example.com"]
 }
@@ -18,9 +18,9 @@ Mistral-Large-2411
   "NumeroDossiers": [],
   "Titre": "Réclamation concernant le traitement d'un dossier",
   "Contenu": "Ca commence à bien faire, quand mon dossier sera traité ?!?",
-  "TypeService": 5,
-  "CategorieProbleme": 1,
-  "Priorisation": 3,
+  "TypeService": 5, //Litige
+  "CategorieProbleme": 1, //OuvertureNouveauDossier
+  "Priorisation": 3, //Elevée
   "InformationsNominatives": [],
   "CoordonneesContact": []
 }
@@ -32,9 +32,9 @@ Meta-Llama-3.1-405B-Instruct
   "NumeroDossiers": [],
   "Titre": "Demande de traitement de dossier",
   "Contenu": "Ca commence à bien faire, quand mon dossier sera traité ?!?",
-  "TypeService": 5,
-  "CategorieProbleme": 2,
-  "Priorisation": 2,
+  "TypeService": 5, //Litige
+  "CategorieProbleme": 2, //AjoutInformationDossierExistant
+  "Priorisation": 2, //Moyenne
   "InformationsNominatives": [],
   "CoordonneesContact": []
 }
@@ -46,9 +46,9 @@ Phi-3-medium-128k-instruct
    "NumeroDossiers":[],
    "Titre":"Quand sera traité mon dossier ?",
    "Contenu":"Ca commence à bien faire, quand mon dossier sera traité ?!?",
-   "TypeService":2,
-   "CategorieProbleme":1,
-   "Priorisation":2,
+   "TypeService":2, //Informatique
+   "CategorieProbleme":1, //OuvertureNouveauDossier
+   "Priorisation":2, //Moyenne
    "InformationsNominatives":[],
    "CoordonneesContact":[]
 }
