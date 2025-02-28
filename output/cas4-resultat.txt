@@ -27,7 +27,6 @@ Mistral-Large-2411
 </JSON>
 
 Meta-Llama-3.1-405B-Instruct
-Après analyse de la réclamation reçue, voici les résultats de mon analyse au format JSON :
 <JSON>
 {
   "NumeroDossiers": [],
