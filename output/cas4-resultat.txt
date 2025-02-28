@@ -40,15 +40,6 @@ Après analyse de la réclamation reçue, voici les résultats de mon analyse au
   "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
 }
 </JSON>
-Explications :
-* Aucun numéro de dossier n'a été détecté.
-* Le titre de la réclamation est une synthèse de l'objet de la demande.
-* Le contenu de la réclamation est le message envoyé par l'utilisateur, converti au format Markdown.
-* Le service interne le plus apte à traiter la demande est les Ressources Humaines (TypeService = 3).
-* La catégorisation la plus appropriée à la demande est Autre (CategorieProbleme = 5), car il s'agit d'une candidature pour un emploi.
-* La priorisation est moyenne (Priorisation = 2), car il s'agit d'une demande courante.
-* Les informations nominatives sont le nom et prénom de la personne qui postule (John Smith).
-* Les coordonnées de contact sont l'adresse email, le numéro de téléphone et l'adresse postale de la personne qui postule.
 
 Phi-3-medium-128k-instruct
 <JSON>
