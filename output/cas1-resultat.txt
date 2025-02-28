@@ -4,9 +4,9 @@ Ministral-3B
     "NumeroDossiers": [],
     "Titre": "Non réception du virement",
     "Contenu": "# Non réception du virement\nSuite à mon dernier échange téléphonique de la semaine dernière avec Mr Martin, je n'ai toujours pas reçu votre virement qui était censé être versé sous 48h.\nJe n'ai pas réussi à vous joindre, merci de revenir vers moi au 0601020304 ou p.martin@gmail.com.",
-    "TypeService": 2,
-    "CategorieProbleme": 2,
-    "Priorisation": 1,
+    "TypeService": 2, //Informatique
+    "CategorieProbleme": 2, //AjoutInformationDossierExistant
+    "Priorisation": 1, //Faible
     "InformationsNominatives": ["Pierre Martin"],
     "CoordonneesContact": ["0601020304", "p.martin@gmail.com"]
 }
@@ -18,9 +18,9 @@ Mistral-Large-2411
     "NumeroDossiers": [],
     "Titre": "Non-réception de virement après échange téléphonique",
     "Contenu": "Bonjour,\n\nSuite à mon dernier échange téléphonique de la semaine dernière avec Mr Martin, je n'ai toujours pas reçu votre virement qui était censé être versé sous 48h.\n\nJe n'ai pas réussi à vous joindre, merci de revenir vers moi au 0601020304 ou p.martin@gmail.com.\n\nCordialement,\nPierre Martin",
-    "TypeService": 1,
-    "CategorieProbleme": 3,
-    "Priorisation": 2,
+    "TypeService": 1, //Comptabilité
+    "CategorieProbleme": 3, //PaiementNonRecu
+    "Priorisation": 2, //Moyenne
     "InformationsNominatives": ["Pierre Martin", "Mr Martin"],
     "CoordonneesContact": ["0601020304", "p.martin@gmail.com"]
 }
@@ -32,9 +32,9 @@ Meta-Llama-3.1-405B-Instruct
   "NumeroDossiers": [],
   "Titre": "Paiement non reçu suite à échange téléphonique",
   "Contenu": "Suite à mon dernier échange téléphonique de la semaine dernière avec Mr Martin, je n'ai toujours pas reçu votre virement qui était censé être versé sous 48h.\nJe n'ai pas réussi à vous joindre, merci de revenir vers moi au 0601020304 ou p.martin@gmail.com.",
-  "TypeService": 5,
-  "CategorieProbleme": 3,
-  "Priorisation": 2,
+  "TypeService": 5, //Litige
+  "CategorieProbleme": 3, //PaiementNonRecu
+  "Priorisation": 2, //Moyenne
   "InformationsNominatives": ["Pierre Martin", "Mr Martin"],
   "CoordonneesContact": ["0601020304", "p.martin@gmail.com"]
 }
@@ -46,9 +46,9 @@ Phi-3-medium-128k-instruct
    "NumeroDossiers":[],
    "Titre":"Non applicable",
    "Contenu":"Bonjour, Suite à mon dernier échange téléphonique de la semaine dernière avec Mr Martin, je n'ai toujours pas reçu votre virement qui était censé être versé sous 48h. Je n'ai pas réussi à vous joindre, merci de revenir vers moi au 0601020304 ou p.martin@gmail.com. Cordialement, Pierre Martin",
-   "TypeService":2,
-   "CategorieProbleme":3,
-   "Priorisation":1,
+   "TypeService":2, //Informatique
+   "CategorieProbleme":3, //PaiementNonRecu
+   "Priorisation":1, //Faible
    "InformationsNominatives":["Pierre Martin"],
    "CoordonneesContact":["0601020304", "p.martin@gmail.com"]
 }
