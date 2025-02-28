@@ -4,9 +4,9 @@ Ministral-3B
     "NumeroDossiers": [],
     "Titre": "Gros bisous les amis",
     "Contenu": "Gros bisous les amis",
-    "TypeService": 7,
-    "CategorieProbleme": 5,
-    "Priorisation": 1,
+    "TypeService": 7, //Autre
+    "CategorieProbleme": 5, //Autre
+    "Priorisation": 1, //Faible
     "InformationsNominatives": [],
     "CoordonneesContact": []
 }
@@ -18,9 +18,9 @@ Mistral-Large-2411
   "NumeroDossiers": [],
   "Titre": "Message sans contenu pertinent",
   "Contenu": "Gros bisous les amis",
-  "TypeService": 7,
-  "CategorieProbleme": 5,
-  "Priorisation": 1,
+  "TypeService": 7, //Autre
+  "CategorieProbleme": 5, //Autre
+  "Priorisation": 1, //Faible
   "InformationsNominatives": [],
   "CoordonneesContact": []
 }
@@ -32,9 +32,9 @@ Meta-Llama-3.1-405B-Instruct
   "NumeroDossiers": [],
   "Titre": "Message de réclamation sans contenu précis",
   "Contenu": "Gros bisous les amis",
-  "TypeService": 7,
-  "CategorieProbleme": 5,
-  "Priorisation": 2,
+  "TypeService": 7, //Autre
+  "CategorieProbleme": 5, //Autre
+  "Priorisation": 2, //Moyenne
   "InformationsNominatives": [],
   "CoordonneesContact": []
 }
@@ -46,9 +46,9 @@ Phi-3-medium-128k-instruct
   "NumeroDossiers": [],
   "Titre": "",
   "Contenu": "Gros bisous les amis",
-  "TypeService": 7,
-  "CategorieProbleme": 5,
-  "Priorisation": 2,
+  "TypeService": 7, //Autre
+  "CategorieProbleme": 5, //Autre
+  "Priorisation": 2, //Moyenne
   "InformationsNominatives": [],
   "CoordonneesContact": []
 }
