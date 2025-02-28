@@ -4,9 +4,9 @@ Ministral-3B
     "NumeroDossiers": [],
     "Titre": "Demande réclamation pour l'ouverture d'un nouveau dossier pour un candidat",
     "Contenu": "L'utilisateur John SMith souhaite postuler à l'offre d'emploi de 'Senior software developer' et souhaite savoir à quel endroit envoyer sa candidature. Il est disponible et très motivé.",
-    "TypeService": 3,
-    "CategorieProbleme": 1,
-    "Priorisation": 2,
+    "TypeService": 3, //RessourcesHumaines
+    "CategorieProbleme": 1, //OuvertureNouveauDossier
+    "Priorisation": 2, //Moyenne
     "InformationsNominatives": ["John SMith"],
     "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
 }
@@ -18,9 +18,9 @@ Mistral-Large-2411
   "NumeroDossiers": [],
   "Titre": "Candidature pour le poste de 'Senior Software Developer'",
   "Contenu": "Hello,\n\nI would like to apply to the job offer 'Senior software developer'.\nI am available and highly motivated, at which address can I send you my resume?\n\nKind regards,\nJohn SMith\n\njsmith@gmail.com\n+44 (0) 123 456 789\n1 East Street SE125EM London (UK)",
-  "TypeService": 3,
-  "CategorieProbleme": 5,
-  "Priorisation": 2,
+  "TypeService": 3, //RessourcesHumaines
+  "CategorieProbleme": 5, //Autre
+  "Priorisation": 2, //Moyenne
   "InformationsNominatives": ["John SMith"],
   "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
 }
@@ -33,9 +33,9 @@ Après analyse de la réclamation reçue, voici les résultats de mon analyse au
   "NumeroDossiers": [],
   "Titre": "Candidature pour l'offre d'emploi 'Senior software developer'",
   "Contenu": "Bonjour,\nJe souhaite postuler à l'offre d'emploi 'Senior software developer'.\nJe suis disponible et très motivé, à quelle adresse puis-je envoyer mon CV ?\nCordialement,\nJohn Smith",
-  "TypeService": 3,
-  "CategorieProbleme": 5,
-  "Priorisation": 2,
+  "TypeService": 3, //RessourcesHumaines
+  "CategorieProbleme": 5, //Autre
+  "Priorisation": 2, //Moyenne
   "InformationsNominatives": ["John Smith"],
   "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
 }
@@ -47,9 +47,9 @@ Phi-3-medium-128k-instruct
   "NumeroDossiers": [],
   "Titre": "Demande d'emploi Senior software developer",
   "Contenu": "Je souhaite m'inscrire à l'offre d'emploi 'Senior software developer'. Je suis disponible et très motivé. Où puis-je vous envoyer ma CV?",
-  "TypeService": 7,
-  "CategorieProbleme": 5,
-  "Priorisation": 1,
+  "TypeService": 7, //Autre
+  "CategorieProbleme": 5, //Autre
+  "Priorisation": 1, //Faible
   "InformationsNominatives": ["John Smith"],
   "CoordonneesContact": ["jsmith@gmail.com", "+44 (0) 123 456 789", "1 East Street SE125EM London (UK)"]
 }
