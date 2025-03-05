@@ -1,4 +1,6 @@
-L'article complet associé à ce repository est trouvable sur le blog Webnet : [Intégrer de l'IA dans une application .NET](https://blog.webnet.fr/integrer-ia-dans-une-application-dotnet/)
+L'article complet associé à ce repository est trouvable sur le blog Webnet :
+
+=> [Intégrer de l'IA dans une application .NET](https://blog.webnet.fr/integrer-ia-dans-une-application-dotnet/)
 
 **RETRANSCRIPTION :**
 
